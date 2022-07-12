@@ -1,0 +1,51 @@
+open ssl sha1 arquivo -> criptografa o arquivo, mostrando seu código sha1 
+
+BLOB -> contém metadados sobre um arquivo: tipo, tamanho, conteúdo, possui sha1
+
+'blob 9\0 conteúdo'
+
+ÁRVORE/TREE - armazenam blobs, apontam tipos de blobs diferentes, mostra o nome do arquivo, possui sha1
+
+COMMIT - maior objeto, dá sentido para as operações e alterações, possuem sha1
+Pode apontar:
+- Para uma árvore
+- Para um parente (commit anterior)
+- Para um autor
+- Para uma mensagem
+- Horário da edição
+
+- Os commits significam alterações em arquivos e pastas e fazem um histórico/linha do tempo de um arquivo ou projeto
+
+git init -> inicia um novo repositório dentro da pasta onde o git Bash está localizado
+
+ls -a -> lista as pastas ocultas
+
+git config --global user.email "email" -> configura o e-mail 
+git config --global user.name name -> configura o nome de usuário
+
+git status - mostra o status do repositório (modified, unmodified, staged)
+
+mv arquivo ./pasta/ -> move um arquivo para outra pasta
+
+echo > arquivo -> cria um arquivo com esse nome
+
+Para dar commit:
+
+git add * -> Dá commit em todas as edições 
+git add arquivo -> Dá commit no arquivo citado
+git add arquivo pasta/ -> Dá commit em um arquivo específico dentro de outra pasta
+git rm arquivo -> remove arquivo
+
+git commit -m "comentário" -> dá o commit com um comentário
+
+Para adicionar o repositório no Github:
+
+git remote add origin link(do repositório) -> adiciona o repositório
+
+git push origin master -> atualiza o repositório
+git pull origin master -> baixa do repositório do github para o computador
+
+CLONAR REPOSITÓRIO
+
+git clone url(do repositório)
+
